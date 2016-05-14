@@ -5,10 +5,52 @@
     width: 120px;
     height: 120px;
     margin:-60px 0 0 -60px;
-    -webkit-animation:spin 2s linear infinite;
-    -moz-animation:spin 2s linear infinite;
-    animation:spin 2s linear infinite;
+    -webkit-animation:engorda 2s linear infinite;
+    -moz-animation:engorda 2s linear infinite;
+    animation:engorda 2s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+  @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #FAAFBE; }
+    49% { background-color: #FAAFBE; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #FAAFBE; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #FAAFBE; }
+    49% { background-color: #FAAFBE; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #FAAFBE; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: #FAAFBE; }
+    49% { background-color: #FAAFBE; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #FAAFBE; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 0.2s infinite;
+  -moz-animation:    argh-my-eyes 0.2s infinite;
+  animation:         argh-my-eyes 0.2s infinite;
+}
+
+h1 {
+    text-align: center;
+		font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	color: white;
+	margin-top: 50px;
+}
+
+@keyframes engorda {
+0% { transform:rotate(0) scale(1) }
+50% { transform:rotate(360deg) scale(6) }
+100% { transform:rotate(720deg) scale(1) }
+}
